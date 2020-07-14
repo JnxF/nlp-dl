@@ -1,23 +1,23 @@
+#!/usr/bin/python3
 import sys
 import argparse
 import codecs
 
 
+MAX_WINDOW = 5
+
+
 def write_document(sentences):
     outfile = "chinesetext_segmented.utf8"
-    g = codecs.open(outfile, mode="w", encoding="utf8")
-    for sentence in sentences:
-        g.write(sentence + "\n")
-    g.close()
+    with codecs.open(outfile, mode="w", encoding="utf8") as g:
+        for sentence in sentences:
+            g.write(sentence + "\n")
 
 
 def segment(l, all_words):
     res = ""
-    n = len(l)
     i = 0
-    MAX_WINDOW = 5
-
-    while i < n:
+    while i < len(l):
         chosen = None
         for window in reversed(range(MAX_WINDOW)):
             word = l[i : i + window]
@@ -25,15 +25,11 @@ def segment(l, all_words):
                 chosen = word
                 i += window
                 break
-
         if not chosen:
             chosen = l[i]
             i += 1
-
         res += chosen + " "
-
     res = res.rstrip()
-
     return res
 
 
@@ -45,23 +41,11 @@ def main():
     word_list_file = sys.argv[1]
     unsegmented_file = sys.argv[2]
 
-    word_list = codecs.open(word_list_file, mode="r", encoding="utf8")
-    unsegmented = codecs.open(unsegmented_file, mode="r", encoding="utf8")
-
-    all_words = [line.rstrip() for line in word_list]
-
-    sentences = []
-    for l in unsegmented:
-        l = l.rstrip()
-        segmented = segment(l, all_words)
-        sentences.append(segmented)
-
-    print("end")
-
-    word_list.close()
-    unsegmented.close()
-
-    write_document(sentences)
+    with codecs.open(word_list_file, mode="r", encoding="utf8") as word_list:
+        with codecs.open(unsegmented_file, mode="r", encoding="utf8") as unsegmented:
+            all_words = [line.rstrip() for line in word_list]
+            sentences = [segment(l.rstrip(), all_words) for l in unsegmented]
+            write_document(sentences)
 
 
 if __name__ == "__main__":
