@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8"/>
+ <title>Lab Exercise 1: Chinese Word Segmentation</title>
+</head>
+<body>
+<h1 align="center">Lab Exercise 1: Chinese Word Segmentation</h1>
+In this exercise you will build a simple Chinese word segmenter.<br/>
+
+<h2>Introduction</h2>
+Perhaps the most obvious feature of Chinese text is the lack of explicit word boundaries. Unlike European languages, Chinese text does not separate its words with spaces; readers are expected to recognise the words, so this separation is not necessary. Separation is only used between sentences and significant phrases.<br/>
+<br/>
+A Chinese sentence is formed by a consecutive string of words, such as:
+<blockquote>中文句子由连续的一系列单词组成</blockquote>
+Each word consists of one or more characters. The above sentence would be segmented as follows:<br/>
+<br/>
+<table border="0" width="80%" align="center">
+<tr align="center"><td>中文</td><td>句子</td><td>由</td><td>连续</td><td>的</td><td>一系列</td><td>单词</td><td>组成</td></tr>
+<tr align="center"><td>Chinese</td><td>sentence</td><td>cause/with</td><td>consecutive</td><td>(adjective marker)</td><td>a series of</td><td>word</td><td>formed</td></tr>
+</table>
+<br/>
+Text segmentation is the task of identifying the individual words in the text, and is a necessary starting point for most kinds of analysis of Chinese text, e.g. tagging, phrase analysis, entity recognition, translation. This task can be difficult because most characters may be individual words themselves, but could also be part of a longer multi-character word. Humans can differentiate the words quite easily, but it is not so simple for a machine.<br/>
+<br/>
+<em>If Chinese text is not displayed correctly in your web browser, it may be necessary to change the page's interpreted character encoding.
+For viewing Chinese text files in a text editor, it may be necessary to select a Chiniese font (e.g. "MS Mincho") for the characters to be correctly displayed. </em>
+
+
+<h3>Greedy Matching</h3>
+
+<!--
+The greedy match algorithm, sometimes called maximum match algorithm, is a simple technique for Chinese word segmentation. The greedy match algorithm starts at one end of a text and attempts to match the longest word from a predefined word list (dictionary) that starts from that position and then moves on. If no match is found in the word list, the algorithm simply treats one character as a word.
+
+To segment a sentence: 
+
+    Starting from the left of our string, we search for the longest substring that matches our word list, if no strings are found we then we move one character forward and re-search. If a substring is found in the word list then we consider that substring a word and move forward that number of characters.
+
+Statistics show that most Chinese words are 5-character long or less, so we can limit the length of the word to be 5 and reduce the substrings we need to search.
+-->
+A simple approach to Chinese segmentation is to use a list of known words, and try to find matching sequences of characters in the text that appear in this list, with a preference for the longest match found. Statistics show that the majority of Chinese words are up to 5-characters long, so we can reduce our searching by limiting the word length to 5 characters.<br/>
+<br/>
+To segment a sentence using a list of known Chinese words:<br/>
+<ul>
+<li>Start at the beginning of the sentence.</li>  
+<li>Find the longest sequence of (up to 5) consecutive characters that
+appears in the word list.</li>
+<li> If a match is found consider that substring a word and move one
+character beyond the end of the matched string and search for a match again.</li>
+<li>If none is found,  assume a single-character word.</li>
+<li>Continue matching until the end of the sentence.</li>
+</ul>
+
+For example, given the sentence: 中文句子由连续的一系列单词组成<br/>
+中文句子由, 中文句子, and 中文句 do not appear in our word list, but 中文 does, so that is our first word.<br/>
+Then we continue, checking for 句子由连续, 句子由连, and so on; we find 句子 as our next word.<br/>
+This is repeated until the end of the sentence, giving: 中文 / 句子 / 由 / 连续 / 的 / 一系列 / 单词 / 组成.
+
+<h3>Handling UTF-8 Files in Python</h3>
+When Unicode text is written to a file, each character can not be stored as a single byte, and so they must be encoded in a special form. UTF-8 is one such encoding that stores characters in a variable number of bytes as necessary. Reading UTF-8 encoded text from files requires a decoding process to retrieve the original Unicode text.<br/>
+Our Chinese texts are encoded with UTF-8, so we must take care when reading the text from files, writing text to files, and displaying text on the screen.<br/>
+
+<h4>Reading from files:</h4>
+<table border="1" width="80%" align="center">
+<tr><td bgcolor="lightcyan">
+<blockquote>
+<code>
+import codecs<br>
+<br>
+infile = "chinesetext.utf8"<br>
+f = codecs.open(infile,<strong>mode='r'</strong>,encoding="utf8")<br>
+<br>
+line = f.readline()&nbsp;&nbsp;&nbsp;<strong>#'line' contains a line of Unicode text (decoded from UTF-8)</strong><br>
+<strong>#...do something...</strong><br/>
+<br>
+f.close()<br>
+</code>
+</blockquote>
+</td></tr>
+</table>
+
+<h4>Writing to files:</h4>
+<table border="1" width="80%" align="center">
+<tr><td bgcolor="lightcyan">
+<blockquote>
+<code>
+import codecs<br>
+<br>
+outfile = "chinesetext_seg.utf8"<br>
+g = codecs.open(outfile,<strong>mode='w'</strong>,encoding="utf8")<br>
+<br>
+<strong>#'chinese_text' contains a line of Chinese characters (Unicode)</strong><br/>
+g.write(<em>chinese_text</em>)&nbsp;&nbsp;&nbsp;<strong>#write text to file (encoded with UTF-8)</strong><br>
+<br>
+g.close()<br>
+</code>
+</blockquote>
+</td></tr>
+</table>
+
+<h4>Printing to screen:</h4>
+<table border="1" width="80%" align="center">
+<tr><td bgcolor="lightcyan">
+<blockquote>
+<code>
+<strong>#Note: this only works in terminals that support display of UTF-8 encoded characters.</strong><br>
+<strong>#An alternative is to redirect the output to a file and display that.</strong><br>
+<br>
+import codecs<br>
+<br>
+infile = "chinesetext.utf8"<br>
+f = codecs.open(infile,mode='r',encoding="utf8")<br>
+<br>
+for line in f:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print line.encode("utf8")&nbsp;&nbsp;<strong>#encode a single line with UTF-8</strong><br>
+<br>
+f.close()<br>
+</code>
+</blockquote>
+</td></tr>
+</table>
+
+
+<h2>Exercises</h2>
+Build a Chinese word segmenter that reads the unsegmented text, segments it in to words using the supplied Chinese word list, and outputs the segmented text.<br/>
+<br/>
+Download the <a href="chinesetext.utf8">unsegmented Chinese text</a> and <a href="chinesetrad_wordlist.utf8">Chinese word list</a>.<br/>
+The Chinese text contains one sentence per line, no numbers, and no punctuation. The Chinese word list contains one word per line.<br/>
+<br/>
+Your program should take two command-line arguments: (1) the file name of the word list, and (2) the name of the unsegmented text file; it should output one sentence per line, in the same order as the unsegmented text, with segmented words separated by spaces.
+
+<h3>Evaluation</h3>
+Evaluate the performance of your segmenter on the <a href="chinesetext_goldstandard.utf8">correctly segmented text</a> using the supplied <a href="evalChinSeg.py"> evaluation script</a>.<br/>
+<br/>
+<table border="1" width="80%" align="center">
+<tr><td bgcolor="lightcyan">
+<blockquote>
+<code>
+python evalChinSeg.py chinesetext_segmented.utf8 chinesetext_goldstandard.utf8
+</code>
+</blockquote>
+</td></tr>
+</table>
+<br/>
+The evaluation program will compare each of your sentences (<em>chinesetext_segmented.utf8</em>) to the correct segmentation (<em>chinesetext_goldstandard.utf8</em>) and display the percentage of correctly segmented words.
+
+<h3>Other Resources</h3>
+The Chinese texts for this assignment come from the Sinica Treebank corpus of traditional Chinese, which is included in NLTK.
+<a href="generateChineseResources.py">This</a> is the python script we used to create the files used in this assignment.<br/>
+<br/>
+Further information on processing texts in Python using Unicode can be found in <a href="http://www.nltk.org/book/ch03.html#sec-unicode" target="_new">Chapter 3.3</a> of the NLTK book.
+
+<h2>Submission</h2>
+Submit three files:
+<ul>
+<li>
+<strong>lab1.py</strong> &mdash; A program which:
+<ul>
+ <li>Takes two command-line arguments: (1) the file name of the word list, and (2) the name of the unsegmented text file;</li>
+ <li>Segments the Chinese text using the greedy matching approach described above;</li>
+ <li>Outputs one sentence per line, in the same order as the unsegmented text, with segmented words separated by spaces.</li>
+</ul>
+</li>
+<li>
+<strong>chinesetext_segmented.utf8</strong> &mdash; the segmented text output by your program.
+</li>
+<li>
+<strong>A brief report</strong> (no more than one side of A4):
+<ul>
+ <li>Describe how your program works.</li>
+ <li>State the result of running the evaluation script on your program's output.</li>
+ <li>Discuss the potential sources of error in this approach and how they might be addressed.</li>
+</ul>
+</li>
+</ul>
+
+Please do not submit any of the provided files as part of your submission.<br/>
+<br/>
+The lab will be marked out of 5 and constitutes 5% of the mark for the module.
+
+<h2>Deadline</h2>
+Assignments should be submitted via MOLE. The deadline for submission is as specified on the module 
+home page.<br>
+Standard departmental penalties for lateness will be applied.<br>
+</body>
+</html>
