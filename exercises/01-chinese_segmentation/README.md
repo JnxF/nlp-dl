@@ -92,10 +92,10 @@ Our Chinese texts are encoded with UTF-8, so we must take care when reading the 
 import codecs  
 
 infile = "chinesetext.utf8"  
-f = codecs.open(infile,**mode='r'**,encoding="utf8")  
+f = codecs.open(infile,mode='r',encoding="utf8")  
 
-line = f.readline()   **#'line' contains a line of Unicode text (decoded from UTF-8)**  
-**#...do something...**  
+line = f.readline()   #'line' contains a line of Unicode text (decoded from UTF-8)
+#...do something...
 
 f.close()  
 ```
@@ -106,10 +106,10 @@ f.close()
 import codecs  
    
 outfile = "chinesetext_seg.utf8"  
-g = codecs.open(outfile,**mode='w'**,encoding="utf8")  
+g = codecs.open(outfile,mode='w',encoding="utf8")  
   
-**#'chinese_text' contains a line of Chinese characters (Unicode)**  
-g.write(_chinese_text_)   **#write text to file (encoded with UTF-8)**  
+#'chinese_text' contains a line of Chinese characters (Unicode) 
+g.write(_chinese_text_)   #write text to file (encoded with UTF-8)
   
 g.close()  
 ```
@@ -126,7 +126,7 @@ infile = "chinesetext.utf8"
 f = codecs.open(infile,mode='r',encoding="utf8")  
   
 for line in f:  
-    print line.encode("utf8")  **#encode a single line with UTF-8**  
+    print line.encode("utf8")  #encode a single line with UTF-8 
   
 f.close()  
 ```
