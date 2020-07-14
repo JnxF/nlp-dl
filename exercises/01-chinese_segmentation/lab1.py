@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import sys
 import argparse
-import codecs
 
 
 MAX_WINDOW = 5
@@ -9,7 +8,7 @@ MAX_WINDOW = 5
 
 def write_document(sentences):
     outfile = "chinesetext_segmented.utf8"
-    with codecs.open(outfile, mode="w", encoding="utf8") as g:
+    with open(outfile, mode="w", encoding="utf8") as g:
         for sentence in sentences:
             g.write(sentence + "\n")
 
@@ -41,8 +40,8 @@ def main():
     word_list_file = sys.argv[1]
     unsegmented_file = sys.argv[2]
 
-    with codecs.open(word_list_file, mode="r", encoding="utf8") as word_list:
-        with codecs.open(unsegmented_file, mode="r", encoding="utf8") as unsegmented:
+    with open(word_list_file, "r", encoding="utf8") as word_list:
+        with open(unsegmented_file, "r", encoding="utf8") as unsegmented:
             all_words = [line.rstrip() for line in word_list]
             sentences = [segment(l.rstrip(), all_words) for l in unsegmented]
             write_document(sentences)
