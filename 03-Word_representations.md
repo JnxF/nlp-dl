@@ -50,3 +50,12 @@ Train the model:
 * Uses two vectors. 
 * Two models: skip-grams (SG, independent of position), continuous bag of words (CBOW).
 * Can add negative sampling.
+
+Optimization:
+* We get an objective function _J_(_θ_), and minimize it.
+* There is a learning rate (conveys a learning step).
+
+Stochastic Gradient Descent:
+* It is slow to calculate everything.
+* So just take a small subset of your data (window), and then apply to everything.
+* The good thing is that Stochastic Gradient Descent escapes better from local minimum.
