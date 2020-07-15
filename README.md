@@ -1,6 +1,8 @@
 # Natural Language Processing and Deep Learning
 
-<img src="https://www.blumeglobal.com/wp-content/uploads/2018/11/NLP-image.jpg">
+<p align="center">
+<img src="https://www.blumeglobal.com/wp-content/uploads/2018/11/NLP-image.jpg" width=50%>
+</p>
 
 ## Notes
 0. [Introduction](00-Introduction.md)
