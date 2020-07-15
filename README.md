@@ -8,6 +8,7 @@
 2. [Tokens](02-Tokens.md)
 3. [Word representations](03-Word_representations.md)
 4. [Formal definitions](04-Formal_definitions.md)
+5. [WordNet](05-WordNet.md)
 
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
