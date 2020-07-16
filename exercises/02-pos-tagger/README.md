@@ -1,6 +1,5 @@
-# Exercise – A Part of Speech tagger
-For this exercise you will build a POS tagger that predicts the POS tag of the next word, based
- exclusively on the tag of the previous word (not on the previous word itself).
+# A Part of Speech tagger
+For this exercise you will build a POS tagger that predicts the POS tag of the next word, based exclusively on the tag of the previous word (not on the previous word itself).
 
 ## The tagger
 
