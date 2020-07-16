@@ -4,9 +4,9 @@ For this exercise you will build a POS tagger that predicts the POS tag of the n
 
 ## The tagger
 
-Given a word wi-1 with tag ti-1, predict the tag ti of the next word wi based exclusively on the tag of the previous word, in other words, ti = P(ti | ti-1). You can estimate the probability by counting, like in today's slides from a large corpus. What is your accuracy?
+Given a word _w<sub>i−1</sub>_ with tag _t<sub>i−1</sub>_, predict the tag _t<sub>i</sub>_ of the next word _w<sub>i</sub>_ based exclusively on the tag of the previous word, in other words, _t<sub>i</sub>_ = _P_(_t<sub>i</sub>_ | _t<sub>i−1</sub>_). You can estimate the probability by counting, like in today's slides from a large corpus. What is your accuracy?
 
-You can download a PoS-tagged corpus from UD (universaldependencies.org) to use for the exercise. Choose whichever language you find most interesting.
+You can download a PoS-tagged corpus from [UD](universaldependencies.org) to use for the exercise. Choose whichever language you find most interesting.
 
 ## Results
 
