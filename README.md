@@ -4,6 +4,9 @@
 <img src="https://www.blumeglobal.com/wp-content/uploads/2018/11/NLP-image.jpg" width=50%>
 </p>
 
+## Assignments
+1. [HMM Part-of-speech tagger](assignments/01-hmm-part-of-speech-tagger)
+
 ## Notes
 0. [Introduction](notes/00-Introduction.md)
 1. [Languages](notes/01-Levels_of_linguistics.md)
@@ -18,3 +21,4 @@
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
 2. [POS tagger](exercises/02-pos-tagger)
+
