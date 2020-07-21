@@ -2,7 +2,7 @@
 
 1. Adjust the code in order to get the plot to display correctly.
 
-Add line ```show()``` to the code.
+    Add line ```show()``` to the code.
 
 2. Look at the weights.
 
