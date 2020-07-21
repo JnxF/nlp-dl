@@ -24,6 +24,8 @@
 
 ### B. Machine learning and deep learning
 0. [Introduction](notes/B-Machine_learning_and_deep_learning/00-Introduction.md)
+1. [Perceptrons](notes/B-Machine_learning_and_deep_learning/01-Perceptrons.md)
+2. [Multilayer neural networks](notes/B-Machine_learning_and_deep_learning/02-Multilayer_neural_networks.md)
 
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
