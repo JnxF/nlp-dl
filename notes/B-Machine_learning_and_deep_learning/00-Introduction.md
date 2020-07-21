@@ -60,3 +60,38 @@ Decision trees:
 * Akinator
 * Decisions about one attirbute at a time.
 * Each path through a decision tree forms a conjunction of attribute tests.
+* The idea is to reduce the entropy, to be more certain.
+
+Representations:
+* Real world -> data really determinant on how the algorithm will behave.
+
+Models:
+* Most ML algorithms are parameterised. 
+* MDL.
+
+Evaluation:
+* How good is the model?
+* Accuracy = |D_train ^ correct| / |D|.
+* Precision: how many things we said were class A, were actually class A?
+    * % of things found that were correct.
+* Recall: how many things in class A, did we find correctly?
+    * % things we should have found, that we did find.
+* Solution: harmonic mean.
+* F-score: F = 2 (P * R) / (P + R).
+* There is the variant F_beta, which weights more or less.
+* ROC curve. Two axis: true positive rate vs. false positive.
+
+Cross-evaluation:
+* Split data into folds.
+
+Overfitting:
+* Regularization.
+* Keep some data out. Validation.
+* Don't make strong hypotheses from small datasets.
+
+Test/train sanitation:
+* With train data: don't even look at it?
+* Scalar = monotonocity or order (integers, reals)
+* Errors can be made on both sides: hinge loss.
+* Mimics human biases.
+
