@@ -30,4 +30,4 @@
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
 2. [POS tagger](exercises/02-pos-tagger)
-
+3. [Perceptron exercises](exercises/03-perceptrons)
