@@ -27,6 +27,7 @@
 1. [Perceptrons](notes/B-Machine_learning_and_deep_learning/01-Perceptrons.md)
 2. [Multilayer neural networks](notes/B-Machine_learning_and_deep_learning/02-Multilayer_neural_networks.md)
 3. [Gradient descent](notes/B-Machine_learning_and_deep_learning/03-Gradient_descent.md)
+4. [LSTM](notes/B-Machine_learning_and_deep_learning/04-Long_short_term_memory.md)
 
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
