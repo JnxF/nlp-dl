@@ -38,3 +38,5 @@ Momentum optimisation:
 * Problems with "ravines" aka parts of space where one dimension varies way more than the other.
 * It is like adding air resistance.
 
+Adam optimisation:
+* Adaptative Moment Estimation (Adam).
