@@ -28,6 +28,8 @@
 2. [Multilayer neural networks](notes/B-Machine_learning_and_deep_learning/02-Multilayer_neural_networks.md)
 3. [Gradient descent](notes/B-Machine_learning_and_deep_learning/03-Gradient_descent.md)
 4. [LSTM](notes/B-Machine_learning_and_deep_learning/04-Long_short_term_memory.md)
+5. [Word representations](notes/B-Machine_learning_and_deep_learning/05-Word_representations.md)
+6. [Clustering](notes/B-Machine_learning_and_deep_learning/06-Clustering.md)
 
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
