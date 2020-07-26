@@ -6,6 +6,7 @@
 
 ## Assignments
 1. [HMM Part-of-speech tagger](assignments/01-hmm-part-of-speech-tagger)
+2. [LSTM Part-of-speech tagger](assignments/02-lstm-part-of-speech-tagger)
 
 ## Notes
 
