@@ -54,15 +54,15 @@ Hidden Markov Model Tagging:
 * The first probabilistic / ML approach to predict PoS.
 * Special case of Bayesian inference.
 * What is the best sequence of tags corresponding to a sequence of words?
-* ^t1n = argmax of t1n over P(t1n | w1n).
+* t̂¹n = argmax of t¹n over P(t¹n | w¹n).
 
 Bayesian rule:
 * P(x | y) = P (y | x) P(x) / P(y)
-* In our case, ^t1n = argmax of t1n over P(w1n | t1n) P(t1n), but this is too hard.
+* In our case, t̂¹n = argmax of t¹n over P(w¹n | t¹n) P(t¹n), but this is too hard.
 
 Hidden Markov Model Tagging:
-* Assume the probability of a word appearing is _independent_ of the other words. E.g. passing from P(w1n | t1n) to the _product_ of P(wi | ti) for each i.
-* The probability of a tag appearing is dependent only on the preceding tag (bigram). P(t1n) is more or less the product of P(ti | ti-1).
+* Assume the probability of a word appearing is _independent_ of the other words. E.g. passing from P(w¹n | t¹n) to the _product_ of P(wi | ti) for each i.
+* The probability of a tag appearing is dependent only on the preceding tag (bigram). P(t¹n) is more or less the product of P(ti | ti-1).
 * The P(ti | ti-1) represents the probability of a tag given the preceding tag, e.g. P(NN | DT), P(JJ | DT)...
 * This can be done counting: count how many times we see the sequence ti-1 followed by ti and divide by the number of times ti-1 is seen.
 * E.g. P(NN|DT) is the proportion of occurrences of DT in which is followed by a NN.
