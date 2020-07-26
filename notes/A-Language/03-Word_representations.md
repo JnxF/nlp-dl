@@ -27,7 +27,7 @@ Representing words by their context:
 * Successful in NLP.
 * Context is though as a fixed-size window around the word.
 
-<img src="img/img1.png">
+<img src="../img/img1.png">
 
 Word vectors:
 * Dense vector for each word; similar words have similar contexts.
@@ -35,14 +35,14 @@ Word vectors:
 
 Word meaning as a neural word vector. Visualization.
 
-<img src="img/img2.png">
+<img src="../img/img2.png">
 
 Word2vec:
 * P(t | c) or P(t | c): probability of the context given the word which we see in the context.
 * Likelihood is a function to be optimized.
 * Uses softmax.
 
-<img src="img/img3.png">
+<img src="../img/img3.png">
 
 Train the model:
 * Theta represents all model parameteres, in one long vector. All the centered words and context words.
