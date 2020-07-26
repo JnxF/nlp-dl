@@ -19,7 +19,7 @@ Dimensionality reduction:
 
 Neural networks:
 * Can be more meaningful, through adding supervision.
-* E.g. word -> encoding -> sentiment.
+* E.g. word → encoding → sentiment.
 
 Unsupervised word vector learning.
 

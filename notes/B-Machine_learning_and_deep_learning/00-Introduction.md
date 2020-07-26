@@ -48,7 +48,7 @@ Bayes MAP:
 * Can happen that all hypothesis are equally likely. For that, we only care about P(D | h).
 
 Naïve Bayes classifier:
-* Assume a target function f: X -> V.
+* Assume a target function f: X → V.
 * X has examples with attributes.
 * vMap is argmax {vj in V} P(a1, a2, an | vj) | P(vj).
 * Assume that the attributes doesn't depend on each other. P(a1, ..., an | vj) = PROD P(ai | j
@@ -63,7 +63,7 @@ Decision trees:
 * The idea is to reduce the entropy, to be more certain.
 
 Representations:
-* Real world -> data really determinant on how the algorithm will behave.
+* Real world → data really determinant on how the algorithm will behave.
 
 Models:
 * Most ML algorithms are parameterised. 

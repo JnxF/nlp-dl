@@ -16,7 +16,7 @@ Phonology:
 * For example: _tpat_, _ISender_, _bintlement_, _zvetsin_. Which one can be English?
 * Sounds that fit together: decided by humans; and they like to be efficient.
 * Find smallest sounds of units that changed in a word, change the meaning.
-* E.g. /p/ by /b/ pig -> big. Those minimals are called _phonemes_.
+* E.g. /p/ by /b/ pig → big. Those minimals are called _phonemes_.
 * Hypothesis: many languages will have similar sounds.
 * 83 % of some languages have /s/ sound.
 
@@ -59,12 +59,12 @@ Inflectional morphology:
 
 Derivational morphology:
 * Creating new words with morphemes.
-* insitute -> institution -> institutional -> instituionalise...
+* insitute → institution → institutional → instituionalise...
 
 Syntax: 
 * No consensus of what constitues a sentence.
 * The complete expression of a single thought / consists of a subject and a predicate / ... many definitions.
-* Traditionally: sentence -> clauses -> phrases -> words -> morphemes.
+* Traditionally: sentence → clauses → phrases → words → morphemes.
 * Represented in a phrase structure tree. Bottom is concrete, top is abstract.
 * Grammar: atalogue of structural descriptions that describe the sentence structure.
 * Structural descriptions are grammar rules.

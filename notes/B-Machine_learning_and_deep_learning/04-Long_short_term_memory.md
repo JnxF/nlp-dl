@@ -15,13 +15,13 @@ Markov models:
 * Problems with langauges like German, where there is too much distance between verb and subject to predict a word.
 
 Neural network:
-* input -> hidden -> output.
+* input → hidden → output.
 
 Neural network, extended:
-* (input + prev_input) -> hidden -> output.
+* (input + prev_input) → hidden → output.
 
 Recurrent neural network:
-* (input + prev_hidden) -> hidden -> output. Better because hidden encodes a "state" throughout the same sequence.
+* (input + prev_hidden) → hidden → output. Better because hidden encodes a "state" throughout the same sequence.
 * This is the learning phase.
 
 LSTM:

@@ -5,7 +5,7 @@ Neural networks:
 * They use all the points to make a decision.
 
 Perceptrons:
-* 1 -> w0, x1 -> w1, ..., xn -> wn... then go to o = 1, if w0 + sum wi*xi > 0; 0 otherwise.
+* 1 → w0, x1 → w1, ..., xn → wn... then go to o = 1, if w0 + sum wi*xi > 0; 0 otherwise.
 * Binary classification.
 
 Perceptron training rule:

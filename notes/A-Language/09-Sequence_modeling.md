@@ -1,6 +1,6 @@
 # Sequence modeling
 
-* We want analysis (sequence -> something else) or generation (something else -> sequence).
+* We want analysis (sequence → something else) or generation (something else → sequence).
 * Sequence models are useful for both of them.
 
 Noisy channel:

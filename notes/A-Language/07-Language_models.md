@@ -3,7 +3,7 @@
 Word sequences:
 * Natural language texts are not sets, but sequences: they have order.
 * Languages where order matters a lot or which ones don't.
-* Can build a grammar restricting permissible sequences (e.g. NP -> ADJ + N).
+* Can build a grammar restricting permissible sequences (e.g. NP → ADJ + N).
 * Approaches: statistical models
 
 Why are useful?

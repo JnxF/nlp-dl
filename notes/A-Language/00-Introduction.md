@@ -5,7 +5,7 @@ Week 1
 * Assignment (individual)
 
 Week 2
-* Machine learning. Concepts: laplacian -> ... -> neural networks
+* Machine learning. Concepts: laplacian → ... → neural networks
 * Assignment (individual)
 
 Week 3
@@ -61,7 +61,7 @@ Semantic extraction:
 
 Language generation:
 * Summarisation: reduce a document.
-* Descriptions: map + image + location + camera -> describe.
+* Descriptions: map + image + location + camera → describe.
 * Journalism: sport and stocks market. Very standarized format.
 * Timestamp + summary + prior context + ... + past event.
 
