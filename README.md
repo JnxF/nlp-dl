@@ -32,6 +32,9 @@
 5. [Word representations](notes/B-Machine_learning_and_deep_learning/05-Word_representations.md)
 6. [Clustering](notes/B-Machine_learning_and_deep_learning/06-Clustering.md)
 
+### C. Advanced topics in NLP
+1. [Transformers](notes/C-Advanced_topics_in_NLP/01-Transformers.md)
+
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
 2. [POS tagger](exercises/02-pos-tagger)
