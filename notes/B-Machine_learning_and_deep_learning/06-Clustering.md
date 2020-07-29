@@ -72,3 +72,13 @@ Evaluating clustering:
 * Methods: intrinsic methods (we do not have the groud truth data), extrinsic evaluation (we have the ground truth, we compare the clustering with the ground truth).
 
 Silhouette coefficient.
+
+Hierarchical clustering:
+* Bottom-up or agglomerative clustering: take the two closest: and put them together.
+* Problem: can never separate clusters that were already merged.
+* Problem: it is just one of many.
+* The picture is called _dendogram_.
+
+Hierarchical clustering of words:
+* But words are not in a metric.
+* Then look at transitions over words.
