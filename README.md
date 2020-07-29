@@ -34,6 +34,7 @@
 
 ### C. Advanced topics in NLP
 1. [Transformers](notes/C-Advanced_topics_in_NLP/01-Transformers.md)
+2. [Social media](notes/C-Advanced_topics_in_NLP/02-Social_media.md)
 
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
