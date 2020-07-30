@@ -1,7 +1,7 @@
 # Social media
 
 Intro:
-* Functional utterances -> vowels -> consonants -> speech -> ... -> social media
+* Functional utterances → vowels → consonants → speech → ... → social media
 
 The 3V:
 * Volume (high volume).
