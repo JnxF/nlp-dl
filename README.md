@@ -35,6 +35,9 @@
 ### C. Advanced topics in NLP
 1. [Transformers](notes/C-Advanced_topics_in_NLP/01-Transformers.md)
 2. [Social media](notes/C-Advanced_topics_in_NLP/02-Social_media.md)
+3. [Entity recognition](notes/C-Advanced_topics_in_NLP/03-Entity_recognition.md)
+4. [Statistical Machine Learning](notes/C-Advanced_topics_in_NLP/04-Statistical_machine_translation.md)
+5. [Conversational agents](notes/C-Advanced_topics_in_NLP/05-Conversational_agents.md)
 
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
