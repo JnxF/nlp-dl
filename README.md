@@ -38,6 +38,7 @@
 3. [Entity recognition](notes/C-Advanced_topics_in_NLP/03-Entity_recognition.md)
 4. [Statistical Machine Learning](notes/C-Advanced_topics_in_NLP/04-Statistical_machine_translation.md)
 5. [Conversational agents](notes/C-Advanced_topics_in_NLP/05-Conversational_agents.md)
+6. [Transfer learning](notes/C-Advanced_topics_in_NLP/06-Transfer_learning.md)
 
 ## Exercises
 1. [Segmenting chinese text](exercises/01-chinese_segmentation)
