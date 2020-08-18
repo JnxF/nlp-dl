@@ -1,4 +1,4 @@
-# Dangerous Liaisons: the Impact of Phoneticsin False Friends Detection Among Romance Languages
+# Dangerous Liaisons: the Impact of Phonetics in False Friends Detection Among Romance Languages
 
 Author: Francisco Martínez Lasaca
 
