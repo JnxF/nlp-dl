@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-<img src="https://i.postimg.cc/Hn5KHgZP/Screenshot-2020-08-18-at-16-35-25.png" width=50%>
+<img src="cover.png" width=50%>
 </p>
 <br>
 
