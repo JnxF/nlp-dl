@@ -17,7 +17,7 @@ This repository compiles the different activities that have been carried out dur
 ## Final project
 I have written a paper regarding false friends as my final project:
 
-[_Dangerous Liaisons: the Impact of Phoneticsin False Friends Detection Among Romance Languages_](project/)
+[_Dangerous Liaisons: the Impact of Phonetics in False Friends Detection Among Romance Languages_](project/)
 
 ## Assignments
 1. [HMM Part-of-speech tagger](assignments/01-hmm-part-of-speech-tagger)
