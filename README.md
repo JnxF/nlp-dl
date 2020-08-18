@@ -1,10 +1,18 @@
-# Natural Language Processing and Deep Learning
-
-This repository compiles the different activities that have been carried out during course at the IT University of Copenhagen in summer 2020: class notes, assignments and a final project.
-
+<br>
 <p align="center">
 <img src="https://i.postimg.cc/Hn5KHgZP/Screenshot-2020-08-18-at-16-35-25.png" width=50%>
 </p>
+<br>
+
+# Natural Language Processing and Deep Learning
+[![HitCount](http://hits.dwyl.com/JnxF/nlp-dl.svg)](http://hits.dwyl.com/JnxF/nlp-dl)
+[![GitHub stars](https://img.shields.io/github/stars/JnxF/nlp-dl.svg)](https://GitHub.com/JnxF/nlp-dl/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/JnxF/nlp-dl.svg)](https://GitHub.com/JnxF/nlp-dl/network/)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/JnxF/nlp-dl.svg)](https://github.com/JnxF/nlp-dl)
+[![GitHub contributors](https://img.shields.io/github/contributors/JnxF/nlp-dl.svg)](https://GitHub.com/JnxF/nlp-dl/graphs/contributors/)
+[![GitHub license](https://img.shields.io/github/license/JnxF/nlp-dl.svg)](https://github.com/JnxF/nlp-dl/blob/master/LICENSE)
+
+This repository compiles the different activities that have been carried out during course at the IT University of Copenhagen in summer 2020: class notes, assignments and a final project.
 
 ## Final project
 I have written a paper regarding false friends as my final project:
