@@ -10,7 +10,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/JnxF/nlp-dl.svg)](https://GitHub.com/JnxF/nlp-dl/network/)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/JnxF/nlp-dl.svg)](https://github.com/JnxF/nlp-dl)
 [![GitHub contributors](https://img.shields.io/github/contributors/JnxF/nlp-dl.svg)](https://GitHub.com/JnxF/nlp-dl/graphs/contributors/)
-[![GitHub license](https://img.shields.io/github/license/JnxF/nlp-dl.svg)](https://github.com/JnxF/nlp-dl/blob/master/LICENSE)
+[![GitHub license](http://img.shields.io/github/license/JnxF/nlp-dl.svg)](https://github.com/JnxF/nlp-dl/blob/master/LICENSE)
 
 This repository compiles the different activities that have been carried out during course at the IT University of Copenhagen in summer 2020: class notes, assignments and a final project.
 
