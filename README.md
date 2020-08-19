@@ -5,7 +5,7 @@
 <br>
 
 # Natural Language Processing and Deep Learning
-[![HitCount](http://hits.dwyl.com/JnxF/nlp-dl.svg)](http://hits.dwyl.com/JnxF/nlp-dl)
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FJnxF%2Fnlp-dl)
 [![GitHub stars](https://img.shields.io/github/stars/JnxF/nlp-dl.svg)](https://GitHub.com/JnxF/nlp-dl/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/JnxF/nlp-dl.svg)](https://GitHub.com/JnxF/nlp-dl/network/)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/JnxF/nlp-dl.svg)](https://github.com/JnxF/nlp-dl)
